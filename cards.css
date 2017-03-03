@@ -1,3 +1,13 @@
 body {
+	display: flex;
 	background: blue;
+}
+
+.cards {
+	height: 200px;
+	width: 350px;
+	background: white;
+	color: black;
+	font-family: Arial;
+	border: 1px solid black;
 }
