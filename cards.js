@@ -4,26 +4,29 @@ var createCardButton = document.getElementById("create-button");
 var cardHolderDiv = document.getElementById("card-holder");
 var cardText = []
 var cardInput = "";
-var cardOutput = document.getElementById('card-output');
+var i = 0;
+// var cardOutput = document.getElementById('card-output');
 
 function captureInput() {
 	var cardInput = document.getElementById('card-text').value;
 	console.log("cardInput", cardInput);
-	cardOutput.innerHTML = cardInput;
-	console.log("cardOutput", cardOutput);
+	// cardOutput.innerHTML = cardInput;
+	// console.log("cardOutput", cardOutput);
 	cardText.push(cardInput);
 	console.log("cardText", cardText); 
+	createCard();
 }
-	cardHolderDiv.innerHTML = "";
+	
 
+cardHolderDiv.innerHTML = "";
 function createCard(cardInput) {
-	for ( i = 0 ; i < cardText.length ; i++ ) {
-		var newCard = "";
-		newCard += `<div class="card-parent" id="cardBox-${i}">`;
-		newCard += `<div class="cards">  ${cardText[i]} </div>`;
-		newCard += `</div>`
-		cardHolderDiv.innerHTML += newCard;
-	}
+	var newCard = "";
+	newCard += `<div class="card-parent" id="cardBox-${i}">`;
+	newCard += `<div class="cards">  ${cardText[i]} </div>`;
+	newCard += `</div>`
+	cardHolderDiv.innerHTML += newCard;
+	i++; 
+	
 }
 
 
@@ -34,5 +37,4 @@ createCardButton.addEventListener("click", getThisPartyStarted);
 
 function getThisPartyStarted() {
 	captureInput();
-	createCard();
 }
