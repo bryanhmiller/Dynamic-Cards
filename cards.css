@@ -1,17 +1,36 @@
 body {
-	display: flex;
-	flex-direction: column;
+	display: block;
 	background: blue;
 }
 
 .cards {
-	display: inline-block;
-	height: 200px;
+	height: 150px;
 	width: 350px;
 	background: white;
 	color: black;
 	font-family: Arial;
-	border: 1px solid black;
-	margin: 10px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 0 10px 10px 10px;
 	padding: 10px;
+}
+
+.pin-holder {
+	height: 50px;
+	width: 350px;
+	background: white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	margin: 10px 10px 0 10px;
+	padding: 10px; 
+
+}
+.pin {
+	position: relative;
+	left: 160px;
+	width: 30px;
+	height: 30px;
+	padding: 0 auto;
 }
