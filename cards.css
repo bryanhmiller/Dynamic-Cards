@@ -1,6 +1,13 @@
 body {
-	display: block;
-	background: blue;
+	background-image: url("http://www.eco-friendly-emporium.com/image-files/cork_floor_tile_light_even.jpg");
+}
+
+.container {
+/*could not get the cards to populate left to right	*/
+}
+
+.card-parent {
+/*styling fail!!!!!*/
 }
 
 .cards {
@@ -14,18 +21,20 @@ body {
 	border-bottom: 1px solid black;
 	margin: 0 10px 10px 10px;
 	padding: 10px;
+	box-shadow: 5px 5px 5px black;
 }
 
 .pin-holder {
-	height: 50px;
+	height: 40px;
 	width: 350px;
 	background: white;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	border-top: 1px solid black;
 	margin: 10px 10px 0 10px;
-	padding: 10px; 
-
+	padding: 10px 10px 0 10px;
+	border-bottom: 1px solid red; 
+	box-shadow: 5px 5px 5px black;
 }
 .pin {
 	position: relative;
